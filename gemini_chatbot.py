@@ -16,7 +16,7 @@ st.set_page_config(page_title="Chat with Gemini Pro",
 
 # Load API key
 # GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-GOOGLE_API_KEY = st.secret("GOOGLE_API_KEY")
+GOOGLE_API_KEY = st.secrets("GOOGLE_API_KEY")
 
 # Setup google gemini-pro AI model
 genai.configure(api_key=GOOGLE_API_KEY)
