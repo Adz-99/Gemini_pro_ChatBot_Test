@@ -21,7 +21,7 @@ GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
 # Setup google gemini-pro AI model
 genai.configure(api_key=GOOGLE_API_KEY)
 # model = genai.GenerativeModel("gemini-pro")
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-2.5-pro")
 
 # function to translate role between gemini and streamlit
 def translate_role_for_streamlit(role):
